@@ -16,11 +16,46 @@
                 background: pink;
                 margin-top: 20px;
             }
-            #canvasModel {
+               
+            
+
+            .tab {
+                overflow: hidden;
+                border: 1px solid white;
+                background-color: grey;
+            }
+
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+            }
+
+            .tab button:hover {
+                background-color: pink;
+            }
+
+            .tab button.active {
+                background-color: #ccc;
+            }
+
+            .tabcontent {   
+                display: none;         
+                padding: 6px 12px;
+                border: 1px solid #ccc;
+                border-top: none;
                 background: grey;
             }
+
+            
             
         </style>
+
+        <script src="scripts/tabs.js"></script>
     </head>
     <body>
 
@@ -28,10 +63,40 @@
             <img src="imgs/logo2.png" height="360" width="761">
             <!-- <h1> Pinkitopía </h1> -->
         </div>
-        <div id="canvasModel">
-            <p style="font-size:40px; font-style:italic"> Modelo de Negocio </p>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+            <button class="tablinks" onclick="openTab(event, 'Game')">Game</button>
+            <button class="tablinks" onclick="openTab(event, 'Canvas')">Canvas</button>
+        </div>
+
+        <div id="Canvas" class="tabcontent">
+            <p style="font-size:40px; font-style:italic"> Business Model </p>
             &nbsp;
             <img src="imgs/modelodeLienzo1.png">
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h1>Welcome to Pinkitopía</h1>
+
+            <p style="font">We are a group of students from Rey Juan Carlos University. We are attempting to establish a project in which we will work during the first months of this course.</p>
+            <p>Hope you enjoy the portfolio!</p>
+            <p>We will update this portfolio everyday so be aware of all the news coming.</p>
+            &nbsp;
+            <div>
+                <h2>Collaborators</h2>
+                <p style="font-style:italic">- Ernesto Jiménez Martínez</p>
+                <p style="font-style:italic">- María de los Ángeles Saint-Mard Álvarez</p>
+                <p style="font-style:italic">- Irene Núñez Carranza</p>
+                <p style="font-style:italic">- Lucas Alejandro Muñoz Muñoz</p>
+                <p style="font-style:italic">- Iván Martín de San Lázaro</p>
+            </div>
+               
+            
+        </div>
+
+        <div id="Game" class="tabcontent">
+            <h1>Here it goes all about the project</h1>
         </div>
     </body>
 </html>
