@@ -181,7 +181,7 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 150px;
+  padding-top: 500px;
   padding-bottom: 100px;
 }
 
@@ -203,8 +203,8 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 600px;
+    /*padding-bottom: 200px;*/
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -487,6 +487,10 @@ header.masthead .intro-text .intro-heading {
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
   margin-bottom: 0;
+}
+
+.timeline .timeline-body{
+  margin: center;
 }
 
 @media (min-width: 768px) {
