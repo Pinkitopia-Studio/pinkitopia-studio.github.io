@@ -1,0 +1,3 @@
+/*
+MAIN GAME JAVASCRIPT. This file calls all functions and contains the MAIN GAME.
+*/
