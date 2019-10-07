@@ -203,7 +203,7 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 600px;
+    padding-top: 150px;
     /*padding-bottom: 200px;*/
   }
   header.masthead .intro-text .intro-lead-in {
