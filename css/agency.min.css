@@ -108,7 +108,14 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #2e0516;
+  background-color: #fabeba;
+}
+
+#mainNav.navbar-shrink {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #AD736F;
+  display: block;
 }
 
 #mainNav .navbar-toggler {
@@ -163,6 +170,7 @@ img::-moz-selection {
     padding-top: 0;
     padding-bottom: 0;
     background-color: #AD736F;
+    display: block;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -181,8 +189,10 @@ header.masthead {
 }
 
 header.masthead .intro-text {
-  padding-top: 500px;
-  padding-bottom: 100px;
+  /*padding-top: 500px;
+  padding-bottom: 100px;*/
+  padding-top: 250px;
+  /*padding-bottom: 200px;*/
 }
 
 header.masthead .intro-text .intro-lead-in {

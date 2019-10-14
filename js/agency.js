@@ -30,8 +30,10 @@
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
+      document.getElementById("logoImg").src="img/logoEmpresa/logoDark.png";
     } else {
       $("#mainNav").removeClass("navbar-shrink");
+      document.getElementById("logoImg").src="img/logoEmpresa/logo.png";
     }
   };
   // Collapse now if page is not at top
@@ -40,3 +42,7 @@
   $(window).scroll(navbarCollapse);
 
 })(jQuery); // End of use strict
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
